@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devita Mei Ardiningtias | Portofolio Guru</title>
+
+    <meta name="description"
+          content="Portofolio profesional Devita Mei Ardiningtias, Guru Kelas SD Negeri Mojomanis 2, Ngawi.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #f7f5ef;
+            color: #252824;
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button,
+        input,
+        textarea {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --cream: #f7f5ef;
+            --white: #ffffff;
+            --dark: #252824;
+            --green: #24483d;
+            --green-light: #3f675a;
+            --gold: #b59b6a;
+            --gray: #777872;
+            --border: #dedbd1;
+            --soft: #efede5;
+
+            --container: 1180px;
+            --radius: 18px;
+            --transition: 0.3s ease;
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
+        .container {
+            width: min(1180px, 90%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .section-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(35px, 5vw, 55px);
+            line-height: 1.15;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .section-description {
+            max-width: 620px;
+            margin-top: 18px;
+            color: var(--gray);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            border: 1px solid var(--green);
+            background: var(--green);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--green);
+        }
+
+        .btn-outline:hover {
+            background: var(--green);
+            color: white;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(247, 245, 239, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(222, 219, 209, 0.8);
+        }
+
+        .navbar {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-mark {
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--green);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--green);
+            font-family: "Playfair Display", serif;
+            font-weight: 700;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-family: "Playfair Display", serif;
+            font-size: 16px;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 10px;
+            color: var(--gray);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-menu a {
+            font-size: 13px;
+            font-weight: 500;
+            color: #555750;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 1px;
+            background: var(--green);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover {
+            color: var(--green);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: none;
+            font-size: 25px;
+            cursor: pointer;
+            color: var(--green);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: calc(100vh - 82px);
+            display: flex;
+            align-items: center;
+            padding: 70px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 0.9fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .hero-content {
+            padding-right: 30px;
+        }
+
+        .hero-small {
+            font-size: 14px;
+            color: var(--green);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(48px, 7vw, 82px);
+            line-height: 1.02;
+            font-weight: 600;
+            letter-spacing: -2px;
+        }
+
+        .hero-title span {
+            color: var(--green);
+        }
+
+        .hero-subtitle {
+            margin-top: 25px;
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 560px;
+        }
+
+        .hero-quote {
+            margin-top: 24px;
+            padding-left: 20px;
+            border-left: 2px solid var(--gold);
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            color: #555750;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 35px;
+        }
+
+        .hero-photo-wrapper {
+            position: relative;
+        }
+
+        .hero-photo {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 150px 150px 20px 20px;
+            background: #ddd8cb;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            right: -60px;
+            bottom: -60px;
+            z-index: -1;
+        }
+
+        .hero-badge {
+            position: absolute;
+            left: -30px;
+            bottom: 35px;
+            background: var(--white);
+            padding: 20px 25px;
+            border-radius: 14px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .hero-badge strong {
+            display: block;
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            color: var(--green);
+        }
+
+        .hero-badge span {
+            font-size: 12px;
+            color: var(--gray);
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 90px;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .info-list {
+            margin-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 17px 0;
+            border-bottom: 1px solid var(--border);
+            gap: 20px;
+        }
+
+        .info-item span:first-child {
+            color: var(--gray);
+        }
+
+        .info-item strong {
+            text-align: right;
+            color: var(--dark);
+        }
+
+
+        /* =====================================================
+           STATISTICS
+        ===================================================== */
+
+        .stats {
+            background: var(--green);
+            color: white;
+            padding: 65px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .stat strong {
+            display: block;
+            font-family: "Playfair Display", serif;
+            font-size: 45px;
+            font-weight: 500;
+        }
+
+        .stat span {
+            font-size: 13px;
+            opacity: 0.75;
+        }
+
+
+        /* =====================================================
+           EDUCATION CONTENT
+        ===================================================== */
+
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .text-link {
+            color: var(--green);
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .article-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .article-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+        }
+
+        .article-image {
+            height: 230px;
+            overflow: hidden;
+            background: var(--soft);
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+
+        .article-body {
+            padding: 25px;
+        }
+
+        .article-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        .article-title {
+            font-family: "Playfair Display", serif;
+            font-size: 23px;
+            line-height: 1.3;
+            margin: 10px 0;
+        }
+
+        .article-body p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .article-date {
+            display: block;
+            margin-top: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           EXPERIENCE
+        ===================================================== */
+
+        .experience {
+            background: var(--white);
+        }
+
+        .timeline {
+            max-width: 850px;
+            margin: 60px auto 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 55px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 19px;
+            height: 19px;
+            background: var(--cream);
+            border: 4px solid var(--green);
+            border-radius: 50%;
+        }
+
+        .timeline-year {
+            font-size: 12px;
+            color: var(--green);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .timeline-title {
+            font-family: "Playfair Display", serif;
+            font-size: 26px;
+            margin: 7px 0;
+        }
+
+        .timeline-place {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .timeline-description {
+            color: var(--gray);
+            margin-top: 10px;
+            max-width: 650px;
+        }
+
+
+        /* =====================================================
+           ACHIEVEMENTS
+        ===================================================== */
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 55px;
+        }
+
+        .achievement-card {
+            border: 1px solid var(--border);
+            background: var(--white);
+            padding: 35px;
+            border-radius: var(--radius);
+            min-height: 230px;
+            transition: var(--transition);
+        }
+
+        .achievement-card:hover {
+            border-color: var(--green);
+            transform: translateY(-5px);
+        }
+
+        .achievement-number {
+            font-family: "Playfair Display", serif;
+            font-size: 45px;
+            color: var(--gold);
+        }
+
+        .achievement-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 23px;
+            margin: 10px 0;
+        }
+
+        .achievement-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+
+        /* =====================================================
+           MEDIA PEMBELAJARAN
+        ===================================================== */
+
+        .media {
+            background: var(--soft);
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .media-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .media-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: var(--green);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .media-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .media-card p {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .media-card a {
+            color: var(--green);
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact {
+            background: var(--green);
+            color: white;
+        }
+
+        .contact .section-label {
+            color: #d8c79e;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-description {
+            color: rgba(255,255,255,0.7);
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-top: 35px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            align-items: start;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact-item span {
+            display: block;
+            color: rgba(255,255,255,0.55);
+            font-size: 12px;
+        }
+
+        .contact-item strong {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            background: white;
+            color: var(--dark);
+            padding: 40px;
+            border-radius: var(--radius);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid var(--border);
+            background: #faf9f5;
+            padding: 14px 16px;
+            border-radius: 10px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--green);
+        }
+
+        .form-group textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #19372f;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .socials a {
+            width: 35px;
+            height: 35px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 12px;
+            transition: var(--transition);
+        }
+
+        .socials a:hover {
+            background: white;
+            color: var(--green);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE TABLET
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .nav-menu {
+                position: absolute;
+                top: 82px;
+                left: 0;
+                right: 0;
+                background: var(--cream);
+                border-bottom: 1px solid var(--border);
+                padding: 25px;
+                flex-direction: column;
+                align-items: flex-start;
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .hero-content {
+                padding-right: 0;
+            }
+
+            .hero-photo {
+                height: 500px;
+            }
+
+            .articles-grid,
+            .achievement-grid,
+            .media-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .navbar {
+                height: 72px;
+            }
+
+            .nav-menu {
+                top: 72px;
+            }
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+
+            .logo-text span {
+                font-size: 9px;
+            }
+
+            .hero {
+                padding: 55px 0;
+            }
+
+            .hero-title {
+                font-size: 48px;
+                letter-spacing: -1px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .hero-photo {
+                height: 430px;
+                border-radius: 100px 100px 15px 15px;
+            }
+
+            .hero-badge {
+                left: 15px;
+                bottom: 20px;
+            }
+
+            .hero-decoration {
+                display: none;
+            }
+
+            .content-header {
+                display: block;
+            }
+
+            .content-header .text-link {
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+            .articles-grid,
+            .achievement-grid,
+            .media-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-image {
+                height: 210px;
+            }
+
+            .about-image {
+                height: 400px;
+            }
+
+            .info-item {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .info-item strong {
+                text-align: left;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#beranda" class="logo">
+
+            <div class="logo-mark">
+                DMA
+            </div>
+
+            <div class="logo-text">
+                <strong>Devita Mei Ardiningtias</strong>
+                <span>Guru Kelas · SD Negeri Mojomanis 2</span>
+            </div>
+
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#edukasi">Konten Edukasi</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#karya">Prestasi/Karya</a>
+            <a href="#media">Media Pembelajaran</a>
+            <a href="#kontak">Kontak</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO / BERANDA
+========================================================= -->
+
+<section class="hero" id="beranda">
+
+    <div class="container hero-grid">
+
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                GURU KELAS · NGawi
+            </div>
+
+            <h1 class="hero-title">
+                Devita Mei
+                <span>Ardiningtias</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Guru Kelas di SD Negeri Mojomanis 2, Ngawi.
+                Menghadirkan pembelajaran yang bermakna,
+                menyenangkan, dan berpusat pada peserta didik.
+            </p>
+
+            <p class="hero-quote">
+                “Pendidikan bukan hanya tentang pengetahuan,
+                tetapi juga tentang membentuk karakter dan mimpi.”
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#profil" class="btn">
+                    Tentang Saya →
+                </a>
+
+                <a href="#karya" class="btn btn-outline">
+                    Lihat Karya
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-photo-wrapper">
+
+            <div class="hero-photo">
+
+                <img
+                    src="foto-guru.jpg"
+                    alt="Foto Devita Mei Ardiningtias"
+                >
+
+            </div>
+
+            <div class="hero-decoration"></div>
+
+            <div class="hero-badge">
+
+                <strong>Guru Kelas</strong>
+
+                <span>
+                    SD Negeri Mojomanis 2 · Ngawi
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROFIL
+========================================================= -->
+
+<section class="section about" id="profil">
+
+    <div class="container about-grid">
+
+
+        <div class="about-image">
+
+            <img
+                src="foto-guru.jpg"
+                alt="Devita Mei Ardiningtias"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="section-label">
+                Profil
+            </div>
+
+            <h2 class="section-title">
+                Tentang Saya
+            </h2>
+
+            <br>
+
+            <h3>
+                Mendidik dengan hati,
+                menginspirasi masa depan.
+            </h3>
+
+            <p>
+                Saya adalah Devita Mei Ardiningtias,
+                seorang Guru Kelas di SD Negeri Mojomanis 2,
+                Kabupaten Ngawi.
+            </p>
+
+            <p>
+                Bagi saya, setiap anak memiliki potensi,
+                karakter, dan cara belajar yang berbeda.
+                Karena itu, proses pembelajaran perlu
+                dirancang agar bermakna, menyenangkan,
+                dan memberikan ruang bagi setiap peserta didik
+                untuk berkembang.
+            </p>
+
+
+            <div class="info-list">
+
+                <div class="info-item">
+                    <span>Nama</span>
+                    <strong>Devita Mei Ardiningtias</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Profesi</span>
+                    <strong>Guru Kelas</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Sekolah</span>
+                    <strong>SD Negeri Mojomanis 2</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Kabupaten/Kota</span>
+                    <strong>Ngawi</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATISTIK
+========================================================= -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <strong>7+</strong>
+            <span>Tahun Mengajar</span>
+        </div>
+
+        <div class="stat">
+            <strong>100+</strong>
+            <span>Peserta Didik</span>
+        </div>
+
+        <div class="stat">
+            <strong>10+</strong>
+            <span>Karya & Media</span>
+        </div>
+
+        <div class="stat">
+            <strong>15+</strong>
+            <span>Kegiatan Pendidikan</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     KONTEN EDUKASI
+========================================================= -->
+
+<section class="section" id="edukasi">
+
+    <div class="container">
+
+        <div class="content-header">
+
+            <div>
+
+                <div class="section-label">
+                    Konten Edukasi
+                </div>
+
+                <h2 class="section-title">
+                    Catatan Pembelajaran
+                </h2>
+
+                <p class="section-description">
+                    Berbagi gagasan, pengalaman, dan praktik
+                    pembelajaran yang dapat memberikan inspirasi
+                    bagi dunia pendidikan.
+                </p>
+
+            </div>
+
+            <a href="#" class="text-link">
+                Lihat Semua →
+            </a>
+
+        </div>
+
+
+        <div class="articles-grid">
+
+
+            <article class="article-card">
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
+                        alt="Pembelajaran di kelas"
+                    >
+
+                </div>
+
+                <div class="article-body">
+
+                    <span class="article-category">
+                        Pembelajaran
+                    </span>
+
+                    <h3 class="article-title">
+                        Menciptakan Pembelajaran
+                        yang Bermakna
+                    </h3>
+
+                    <p>
+                        Strategi sederhana untuk menciptakan
+                        suasana belajar yang aktif dan menyenangkan.
+                    </p>
+
+                    <span class="article-date">
+                        Artikel Edukasi
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="article-card">
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80"
+                        alt="Guru mengajar"
+                    >
+
+                </div>
+
+                <div class="article-body">
+
+                    <span class="article-category">
+                        Pendidikan
+                    </span>
+
+                    <h3 class="article-title">
+                        Strategi Belajar
+                        Aktif dan Menyenangkan
+                    </h3>
+
+                    <p>
+                        Ide kegiatan pembelajaran untuk meningkatkan
+                        keterlibatan peserta didik di kelas.
+                    </p>
+
+                    <span class="article-date">
+                        Artikel Edukasi
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="article-card">
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80"
+                        alt="Anak belajar"
+                    >
+
+                </div>
+
+                <div class="article-body">
+
+                    <span class="article-category">
+                        Literasi
+                    </span>
+
+                    <h3 class="article-title">
+                        Membangun Budaya
+                        Literasi di Sekolah
+                    </h3>
+
+                    <p>
+                        Menumbuhkan kebiasaan membaca dan belajar
+                        melalui aktivitas sederhana di sekolah.
+                    </p>
+
+                    <span class="article-date">
+                        Artikel Edukasi
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PENGALAMAN
+========================================================= -->
+
+<section class="section experience" id="pengalaman">
+
+    <div class="container">
+
+        <div class="section-label">
+            Pengalaman
+        </div>
+
+        <h2 class="section-title">
+            Perjalanan Mengajar
+        </h2>
+
+        <p class="section-description">
+            Pengalaman dan kegiatan profesional dalam perjalanan
+            sebagai pendidik.
+        </p>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    PENGALAMAN MENGAJAR
+                </div>
+
+                <h3 class="timeline-title">
+                    Guru Kelas
+                </h3>
+
+                <div class="timeline-place">
+                    SD Negeri Mojomanis 2 · Ngawi
+                </div>
+
+                <p class="timeline-description">
+                    Melaksanakan kegiatan pembelajaran,
+                    membimbing peserta didik, mengembangkan
+                    media pembelajaran, serta mendukung
+                    kegiatan sekolah.
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    KEGIATAN PROFESIONAL
+                </div>
+
+                <h3 class="timeline-title">
+                    Pengembangan Pembelajaran
+                </h3>
+
+                <div class="timeline-place">
+                    Pendidikan Sekolah Dasar
+                </div>
+
+                <p class="timeline-description">
+                    Mengembangkan berbagai pendekatan,
+                    bahan ajar, dan aktivitas pembelajaran
+                    yang disesuaikan dengan kebutuhan peserta didik.
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    PENGEMBANGAN DIRI
+                </div>
+
+                <h3 class="timeline-title">
+                    Belajar dan Berbagi
+                </h3>
+
+                <div class="timeline-place">
+                    Komunitas & Kegiatan Pendidikan
+                </div>
+
+                <p class="timeline-description">
+                    Terus mengembangkan kompetensi melalui kegiatan
+                    belajar, berbagi praktik baik, dan kolaborasi
+                    dalam dunia pendidikan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRESTASI / KARYA
+========================================================= -->
+
+<section class="section" id="karya">
+
+    <div class="container">
+
+        <div class="section-label">
+            Prestasi & Karya
+        </div>
+
+        <h2 class="section-title">
+            Karya Pendidikan
+        </h2>
+
+        <p class="section-description">
+            Dokumentasi karya, inovasi, dan kontribusi
+            dalam kegiatan pembelajaran.
+        </p>
+
+
+        <div class="achievement-grid">
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-number">
+                    01
+                </div>
+
+                <h3>
+                    Media Pembelajaran
+                </h3>
+
+                <p>
+                    Pengembangan media pembelajaran kreatif
+                    untuk mendukung proses belajar peserta didik.
+                </p>
+
+            </div>
+
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-number">
+                    02
+                </div>
+
+                <h3>
+                    Modul & LKPD
+                </h3>
+
+                <p>
+                    Penyusunan bahan ajar dan lembar kerja
+                    yang dapat digunakan dalam kegiatan pembelajaran.
+                </p>
+
+            </div>
+
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-number">
+                    03
+                </div>
+
+                <h3>
+                    Praktik Baik
+                </h3>
+
+                <p>
+                    Dokumentasi pengalaman dan praktik baik
+                    dalam menciptakan pembelajaran yang bermakna.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEDIA PEMBELAJARAN
+========================================================= -->
+
+<section class="section media" id="media">
+
+    <div class="container">
+
+        <div class="section-label">
+            Media Pembelajaran
+        </div>
+
+        <h2 class="section-title">
+            Belajar Lebih Interaktif
+        </h2>
+
+        <p class="section-description">
+            Koleksi media pembelajaran yang dapat digunakan
+            untuk mendukung aktivitas belajar di kelas.
+        </p>
+
+
+        <div class="media-grid">
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    📖
+                </div>
+
+                <h3>
+                    Modul Pembelajaran
+                </h3>
+
+                <p>
+                    Modul pembelajaran untuk membantu peserta didik
+                    memahami materi secara terstruktur.
+                </p>
+
+                <a href="#">
+                    Lihat Modul →
+                </a>
+
+            </div>
+
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    📝
+                </div>
+
+                <h3>
+                    LKPD
+                </h3>
+
+                <p>
+                    Lembar kerja peserta didik yang dirancang
+                    untuk aktivitas belajar yang aktif.
+                </p>
+
+                <a href="#">
+                    Lihat LKPD →
+                </a>
+
+            </div>
+
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    🎥
+                </div>
+
+                <h3>
+                    Video Pembelajaran
+                </h3>
+
+                <p>
+                    Kumpulan video pembelajaran sebagai media
+                    pendukung kegiatan belajar.
+                </p>
+
+                <a href="#">
+                    Lihat Video →
+                </a>
+
+            </div>
+
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Aktivitas Kelas
+                </h3>
+
+                <p>
+                    Ide kegiatan pembelajaran kreatif yang dapat
+                    diterapkan dalam kegiatan kelas.
+                </p>
+
+                <a href="#">
+                    Lihat Aktivitas →
+                </a>
+
+            </div>
+
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    🖥️
+                </div>
+
+                <h3>
+                    Presentasi
+                </h3>
+
+                <p>
+                    Materi presentasi yang membantu menyampaikan
+                    konsep pembelajaran secara visual.
+                </p>
+
+                <a href="#">
+                    Lihat Presentasi →
+                </a>
+
+            </div>
+
+
+
+            <div class="media-card">
+
+                <div class="media-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Bahan Bacaan
+                </h3>
+
+                <p>
+                    Referensi dan bahan bacaan pendukung
+                    untuk memperkaya pengalaman belajar.
+                </p>
+
+                <a href="#">
+                    Lihat Materi →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     KONTAK
+========================================================= -->
+
+<section class="section contact" id="kontak">
+
+    <div class="container contact-grid">
+
+
+        <div>
+
+            <div class="section-label">
+                Kontak
+            </div>
+
+            <h2 class="section-title">
+                Mari Terhubung
+            </h2>
+
+            <p class="contact-description">
+                Untuk kolaborasi pendidikan, berbagi praktik baik,
+                atau komunikasi terkait kegiatan pembelajaran,
+                silakan menghubungi saya.
+            </p>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <strong>
+                            emailanda@example.com
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <span>Sekolah</span>
+                        <strong>
+                            SD Negeri Mojomanis 2
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ◎
+                    </div>
+
+                    <div>
+                        <span>Lokasi</span>
+                        <strong>
+                            Kabupaten Ngawi
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-group">
+
+                <label for="nama">
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Nama Anda"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="email@example.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="pesan">
+                    Pesan
+                </label>
+
+                <textarea
+                    id="pesan"
+                    placeholder="Tuliskan pesan Anda..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Kirim Pesan →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="footer-text">
+            © 2026 Devita Mei Ardiningtias.
+            All Rights Reserved.
+        </div>
+
+        <div class="socials">
+
+            <a href="#" aria-label="Instagram">
+                IG
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                FB
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                YT
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /* Mobile Navigation */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", function () {
+
+        navMenu.classList.toggle("active");
+
+    });
+
+
+    /* Close menu after clicking */
+
+    document.querySelectorAll(".nav-menu a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* Contact Form */
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+
+        alert(
+            "Terima kasih, " +
+            nama +
+            ". Pesan Anda sudah siap untuk dikirim."
+        );
+
+        contactForm.reset();
+
+    });
+
+</script>
+
+
+</body>
+</html>portfolio-devita/
+│
+├── index.html
+│
+└── foto-guru.jpg
+emailanda@example.com
